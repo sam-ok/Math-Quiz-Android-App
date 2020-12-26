@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Math Quiz</string>
     <string name="GO">GO</string>
+    <string name="year">2020</string>
+    <string name="addition">ADDITION</string>
+    <string name="subtraction">SUBTRACTION</string>
+    <string name="multiplication">MULTIPLICATION</string>
+    <string name="division">DIVISION</string>
 </resources>

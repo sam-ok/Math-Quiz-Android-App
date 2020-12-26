@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             btn_answer1.setEnabled(false);
             btn_answer2.setEnabled(false);
             btn_answer3.setEnabled(false);
-            tv_bottommessage.setText("LOVE YOU HANIE, ALWAYS!");
+            tv_bottommessage.setText("A MERRY DAY UNCLE :)");
 
             final Handler handler = new Handler();
 

@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/math_quiz"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ChooseGame"></activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
