@@ -3,25 +3,25 @@ package com.samo.mathquiz;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Game {
-    private List<AdditionQuestion> questions;
+public class DivisionGame {
+    private List<DivisionQuestion> questions;
     private int numberCorrect;
     private int numberIncorrect;
     private int totalQuestions;
     private int score;
-    private AdditionQuestion currentQuestion;
+    private DivisionQuestion currentQuestion;
 
-    public Game() {
+    public DivisionGame() {
         numberCorrect = 0;
         numberIncorrect = 0;
         totalQuestions = 0;
         score = 0;
-        currentQuestion = new AdditionQuestion(10);
-        questions = new ArrayList<AdditionQuestion>();
+        currentQuestion = new DivisionQuestion(10);
+        questions = new ArrayList<DivisionQuestion>();
     }
 
     public void makeNewQuestion(){
-        currentQuestion = new AdditionQuestion(totalQuestions = 2 + 5);
+        currentQuestion = new DivisionQuestion(totalQuestions = 2 + 5);
         totalQuestions++;
         questions.add(currentQuestion);
     }
@@ -38,11 +38,11 @@ public class Game {
         return isCorrect;
     }
 
-    public List<AdditionQuestion> getQuestions() {
+    public List<DivisionQuestion> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(List<AdditionQuestion> questions) {
+    public void setQuestions(List<DivisionQuestion> questions) {
         this.questions = questions;
     }
 
@@ -78,11 +78,11 @@ public class Game {
         this.score = score;
     }
 
-    public AdditionQuestion getCurrentQuestion() {
+    public DivisionQuestion getCurrentQuestion() {
         return currentQuestion;
     }
 
-    public void setCurrentQuestion(AdditionQuestion currentQuestion) {
+    public void setCurrentQuestion(DivisionQuestion currentQuestion) {
         this.currentQuestion = currentQuestion;
     }
 }

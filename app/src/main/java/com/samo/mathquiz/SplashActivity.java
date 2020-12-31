@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
 
 //  New intent.
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, ChooseGame.class);
                 startActivity(intent);
 
             }

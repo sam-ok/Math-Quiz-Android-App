@@ -1,36 +1,34 @@
 package com.samo.mathquiz;
 
-import android.graphics.RadialGradient;
-
 import java.util.Random;
 
-public class Question {
+public class MultiplicationQuestion {
     private int firstNumber;
     private int secondNumber;
     private int answer;
 
-//    Four choices exist for the user to pick from.
+    //    Four choices exist for the user to pick from.
     private int [] answerArray;
 
-//    which of the four positions is correct, 0,1,2 or 3.
+    //    which of the four positions is correct, 0,1,2 or 3.
     private int answerPosition;
 
-//    the maximum value of firstNumber or secondNumber.
+    //    the maximum value of firstNumber or secondNumber.
     private int upperLimit;
 
-//    String output of the problem e.g. "4 + 9 = "
+    //    String output of the problem e.g. "4 * 9 "
     private String questionPhrase;
 
 //    generate a new random question.
 
-    public Question(int upperLimit){
+    public MultiplicationQuestion(int upperLimit){
         this.upperLimit = upperLimit;
         Random randomNumberMaker = new Random();
 
         this.firstNumber = randomNumberMaker.nextInt(upperLimit);
         this.secondNumber = randomNumberMaker.nextInt(upperLimit);
-        this.answer = this.firstNumber + this.secondNumber;
-        this.questionPhrase = firstNumber + " + " + secondNumber;
+        this.answer = this.firstNumber * this.secondNumber;
+        this.questionPhrase = firstNumber + " * " + secondNumber;
 
         this.answerPosition = randomNumberMaker.nextInt(4);
         this.answerArray = new int[] {0,1,2,3};
@@ -51,9 +49,9 @@ public class Question {
 
         for (int i = array.length -1; i>0; i--){
             index = randomNumberGenerator.nextInt(i +1);
-           temp = array[index];
-           array[index] = array[i];
-           array[i] = temp;
+            temp = array[index];
+            array[index] = array[i];
+            array[i] = temp;
         }
         return array;
     }

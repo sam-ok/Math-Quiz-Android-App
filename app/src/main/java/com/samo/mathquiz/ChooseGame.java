@@ -14,27 +14,27 @@ public class ChooseGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_game);
 
-    };
+    }
+
     public void addition(View v){
         Intent intent = new Intent(ChooseGame.this,MainActivity.class);
         startActivity(intent);
-    };
+    }
 
     public void subtraction(View v){
-        Intent intent = new Intent(ChooseGame.this,MainActivity.class);
+        Intent intent = new Intent(ChooseGame.this,SubtractionActivity.class);
         startActivity(intent);
-    };
+    }
 
     public void multiplication(View v){
-        Intent intent = new Intent(ChooseGame.this,MainActivity.class);
+        Intent intent = new Intent(ChooseGame.this,MultiplicationActivity.class);
         startActivity(intent);
 
-    };
+    }
 
     public void division(View v){
-        Intent intent = new Intent(ChooseGame.this,MainActivity.class);
+        Intent intent = new Intent(ChooseGame.this,DivisionActivity.class);
         startActivity(intent);
-    };
-
+    }
 
 }

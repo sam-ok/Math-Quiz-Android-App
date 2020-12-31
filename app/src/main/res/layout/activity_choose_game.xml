@@ -16,26 +16,44 @@
         android:layout_marginTop="40dp"
         android:src="@drawable/math_quiz" />
 
-    <Button
-        android:id="@+id/addition"
-        android:layout_width="341dp"
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView3"
+        android:layout_alignBottom="@id/imageView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="-26dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="@string/slogan"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_addition"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
         android:background="@drawable/round_button"
         android:backgroundTint="#FF5722"
+        android:fontFamily="@font/joti_one"
+        android:onClick="addition"
         android:text="@string/addition"
         android:textColor="#fff"
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/subtraction"
-        android:layout_width="341dp"
+        android:id="@+id/btn_subtraction"
+        android:layout_width="281dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/addition"
+        android:layout_below="@id/btn_addition"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:onClick="subtraction"
+        android:fontFamily="@font/joti_one"
         android:background="@drawable/round_button"
         android:backgroundTint="#E91E63"
         android:text="@string/subtraction"
@@ -43,53 +61,34 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/multiplication"
-        android:layout_width="341dp"
+        android:id="@+id/btn_multiplication"
+        android:layout_width="281dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/subtraction"
+        android:layout_below="@id/btn_subtraction"
+        android:onClick="multiplication"
+        android:fontFamily="@font/joti_one"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_button"
-        android:backgroundTint="#673AB7"
+        android:backgroundTint="#9C27B0"
         android:text="@string/multiplication"
         android:textColor="#fff"
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/division"
-        android:layout_width="341dp"
+        android:id="@+id/btn_division"
+        android:layout_width="281dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/multiplication"
+        android:layout_below="@id/btn_multiplication"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:onClick="division"
+        android:fontFamily="@font/joti_one"
         android:background="@drawable/round_button"
         android:backgroundTint="#4CAF50"
         android:text="@string/division"
         android:textColor="#fff"
         android:textSize="24sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="55dp"
-        android:padding="10dp"
-        android:textSize="16sp"
-        android:text="MATH QUIZ"
-        android:textColor="#fff"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="31dp"
-        android:textSize="12sp"
-        android:padding="10dp"
-        android:text="@string/year"
-        android:textColor="#fff"
-        android:textStyle="italic" />
 
 </RelativeLayout>

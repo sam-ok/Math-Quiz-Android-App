@@ -4,15 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    android:layout_margin="0dp"
-    tools:context=".MainActivity">
-
+    tools:context=".DivisionActivity">
     <Button
         android:id="@+id/btn_start"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:background="#eb4d4b"
+        android:background="#f1c40f"
         android:fontFamily="@font/joti_one"
         android:text="@string/GO"
         android:textColor="#fff"
@@ -32,7 +29,7 @@
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
         android:max="30"
-        android:background="#eb4d4b"
+        android:background="#f1c40f"
         android:progress="20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_weight="1"
-                android:background="#f6e58d"
+                android:background="#1abc9c"
                 android:textSize="24sp"
                 android:text=""
                 android:textColor="#fff" />
@@ -104,7 +101,7 @@
                 android:id="@+id/btn_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:background="#ffbe76"
+                android:background="#2ecc71"
                 android:textColor="#fff"
                 android:textSize="24sp"
                 android:layout_weight="1"
@@ -120,7 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_weight="1"
-                android:background="#f9ca24"
+                android:background="#16a085"
                 android:textSize="24sp"
                 android:text=""
                 android:textColor="#fff" />
@@ -130,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_weight="1"
-                android:background="#f0932b"
+                android:background="#27ae60"
                 android:textSize="24sp"
                 android:textColor="#fff"
                 android:text="" />

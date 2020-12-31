@@ -9,14 +9,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MultiplicationActivity extends AppCompatActivity {
     Button btn_start, btn_answer0, btn_answer1, btn_answer2, btn_answer3;
     TextView tv_score, tv_questions, tv_timer, tv_bottommessage;
     ProgressBar prog_timer;
 
-    Game g = new Game();
+    MultiplicationGame g = new MultiplicationGame();
 
     int secondsRemaining = 30;
 
@@ -48,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-//    @Override
+    //    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_multiplication);
 
         btn_start = findViewById(R.id.btn_start);
         btn_answer0 = findViewById(R.id.btn_answer0);
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 Button start_button = (Button) v;
                 start_button.setVisibility(View.INVISIBLE);
                 secondsRemaining = 30;
-                g = new Game();
+                g = new MultiplicationGame();
                 nextTurn();
                 timer.start();
             }
@@ -121,5 +120,4 @@ public class MainActivity extends AppCompatActivity {
         tv_questions.setText(g.getCurrentQuestion().getQuestionPhrase());
         tv_bottommessage.setText(g.getNumberCorrect() + "/" + (g.getTotalQuestions() -1));
     }
-
 }
